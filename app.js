@@ -12,7 +12,6 @@ function EventListeners(){
 
 }
 
-
 //! 3 Functions 
 
 function AddItemToCart(e){
