@@ -1,0 +1,148 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/************** NAVIGATION BAR  ***************/
+
+.navbar{
+    display: flex;
+    padding: 15px 20px; 
+    position: sticky;
+    bottom: 0;
+}
+
+.items, .shoppingCart{
+ flex: 1;
+
+}
+.items{
+    display: flex;
+    list-style: none;
+}
+
+.item{
+    color: #fff;
+    padding-right: 3rem; 
+}
+
+.shoppingCart{
+    text-align: end; 
+    padding-right: 5rem; 
+    position: relative;
+    
+}
+.shoppingCart-a i{
+   color: #f0932b; 
+   margin-right: 10rem;
+}
+
+.shoppingCart-a {
+  width: 50px;
+  margin-right: 10rem;
+ }
+/* ********** HEADER SECTION ***********  */
+#header-section{
+
+    background-image:url("images/bgImage.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+     
+
+}   
+
+
+.cardItems{
+    display: flex; 
+    justify-content: space-around;
+    height: 100%; 
+    align-items: center;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+}
+.cardItems a{
+color: #fff; 
+text-decoration: none;
+background-color: #22a6b3;
+border-radius: 5px;
+font-weight: bold;
+display: block;
+margin-top: 3px;
+padding:5px; 
+text-align: center;
+}
+
+.card-img-top{
+    height :200px;
+    width: 100%; 
+
+}
+
+/* **************SHOPPING CART *************** */
+/* 
+#cart-table{
+    display: block;
+    position:absolute;
+    right: 3rem;
+    background-color: #fff; 
+    min-height: 25rem; 
+    width: 18rem;
+    margin-top: 48px;
+    z-index: 1;
+    
+} */
+
+
+.shoppingCart-a #cart-table{
+    display: none;
+  
+}
+
+.shoppingCart-a:hover #cart-table{
+        display: block;
+        position: absolute;
+        right: 3rem;
+        background-color: #fff;
+        height: 24rem;
+        width: 18rem;
+        margin-top: 1rem;
+        z-index: 1;
+        top: -24.2rem;
+        overflow-y: scroll;
+        overscroll-behavior-y:inherit;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+}
+
+
+.cart-thead{
+    padding: 15px 30px 15px 15px;
+    font-size: large;
+    margin: 0;
+    border-bottom: 1px solid #E1E1E1;
+    position: sticky;
+    top: 0;
+    background-color: #dfe6e9;
+
+}
+
+.thead-bg-color{
+    background-color:black;
+    color: #fff;
+}
+
+.appendedTr img{
+ width: 80px;
+ height: 80px
+}
+.appendedTr .card-text{
+    margin-left: 8px;
+    font-size: large;
+    color: #22a6b3;
+   }
